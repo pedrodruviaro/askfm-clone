@@ -34,7 +34,33 @@ export default function Index() {
                 </Container>
             </MainHero>
 
-            <FooterMain></FooterMain>
+            <FooterMain>
+                <Container>
+                    <nav>
+                        <p>Potuguês (Brasil)</p>
+                        <span>English</span>
+                        <span>Español</span>
+                        <span>Français</span>
+                        <span>Deutsch</span>
+                        <span>Italiano</span>
+                        <span>Turkçe</span>
+                        <span>Polski</span>
+                        <span>Todos os idiomas</span>
+                    </nav>
+                    <hr />
+                    <div>
+                        <span>&copy; SIA Ask.fm 2021</span>
+                        <span>Privacidade</span>
+                        <span>Termos de Uso</span>
+                        <span>Logotipo e botões</span>
+                        <span>Anunciar</span>
+                        <span>Entre em contato</span>
+                        <span>
+                            Idioma: <strong>Português</strong>
+                        </span>
+                    </div>
+                </Container>
+            </FooterMain>
         </>
     );
 }

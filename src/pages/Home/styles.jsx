@@ -21,6 +21,7 @@ export const Header = styled.header`
 
         span {
             color: ${(props) => props.theme.light};
+            font-size: 0.9rem;
         }
     }
 `;
@@ -79,4 +80,50 @@ export const MainHero = styled.main`
     }
 `;
 
-export const FooterMain = styled.main``;
+export const FooterMain = styled.main`
+    margin-top: 2rem;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        > p {
+            flex: 1;
+            font-weight: 600;
+        }
+
+        > span {
+            color: ${(props) => props.theme.lightBlue};
+            filter: brightness(0.8);
+            margin: 1rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    > div {
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            flex-wrap: wrap;
+
+            span {
+                margin: 1rem;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+`;
