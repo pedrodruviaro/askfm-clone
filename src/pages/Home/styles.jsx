@@ -31,8 +31,6 @@ export const MainHero = styled.main`
 
     height: 60vh;
 
-    padding: 1rem;
-
     > div {
         display: flex;
         align-items: center;
@@ -41,13 +39,25 @@ export const MainHero = styled.main`
 
         > footer {
             position: absolute;
-            bottom: 1rem;
-            width: 100%;
+            bottom: 2rem;
+            width: calc(100% - 2rem);
             display: flex;
             justify-content: space-between;
             color: ${(props) => props.theme.light};
             font-size: 1.15rem;
             font-weight: 500;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 25px;
+                height: 25px;
+                background-color: ${(props) => props.theme.light};
+                transform: rotate(45deg);
+                position: absolute;
+                bottom: -45px;
+                left: 15px;
+            }
         }
     }
 
